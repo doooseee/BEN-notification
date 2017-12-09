@@ -1,11 +1,15 @@
 # BEN NOTIFICATION 
 
 ### install
-```
-npm install --save ben-notification
-```
+
+0）`npm install --save ben-notification`
+1）move the `sound` to your project `/assets`
+2）`MSG.set({"sound_path":"/assets/sound"})`
+3）require the `style/msg-style.css`(or and `animation.css`,`ionicons.min.css` ) to your project
+
 
 ```javascript
+
 // nodeJs
 const MSG = module.require('ben-notification')
 ```

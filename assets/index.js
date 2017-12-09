@@ -6,7 +6,6 @@
     registeredInModuleLoader = true;
   }
   if (typeof exports === 'object') {
-    var $ = module.require('jquery');
     module.exports = factory($);
     registeredInModuleLoader = true;
   }

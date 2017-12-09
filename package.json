@@ -1,6 +1,6 @@
 {
   "name": "ben-notification",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "MSG.alert('Alert'，'success',?callback) | MSG.success | MSG.warning | MSG.error | MSG.msg",
   "main": "assets/index.js",
   "scripts": {
