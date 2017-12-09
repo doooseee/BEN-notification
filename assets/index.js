@@ -57,7 +57,7 @@
       "content": "",
       "icon": void 0,
       "iconSmall": void 0,
-      "sound": config.sound_on,
+      "sound": config.sound,
       "sound_file": "smallbox",
       "color": void 0,
       "timeout": config.timeout,
