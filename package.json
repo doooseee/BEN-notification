@@ -1,0 +1,27 @@
+{
+  "name": "ben-notification",
+  "version": "1.0.0",
+  "description": "MSG.alert('Alert'，'success',?callback) | MSG.success | MSG.warning | MSG.error | MSG.msg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doooseee/BEN-notification.git"
+  },
+  "keywords": [
+    "message",
+    "notification",
+    "msg"
+  ],
+  "author": "benqio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doooseee/BEN-notification/issues"
+  },
+  "homepage": "https://github.com/doooseee/BEN-notification#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

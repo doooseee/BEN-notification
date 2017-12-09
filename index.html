@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MSGBOX</title>
+    <link rel="stylesheet" href="assets/style/msg-style.css">
+    <link rel="stylesheet" href="assets/style/animation.css">
+    <link rel="stylesheet" href="assets/style/ionicons.min.css">
+    <script src="assets/jQuery.js"></script>
+
+    <style>
+        body {
+        }
+
+        p.b-group {
+            width: 600px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        a.button {
+            text-decoration: none;
+            color: #FFF;
+            background: #03A9F4;
+            padding: 10px 20px;
+            margin: 0 10px;
+            opacity: .7;
+        }
+
+        a.button.error {
+            background: #F44336;
+        }
+
+        a.button.alarm {
+            background: #FF9800;
+        }
+
+        a.button.success {
+            background: #4CAF50;
+        }
+
+        a.button.msg {
+            background: #d22222;
+        }
+
+        a.button:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<p class="b-group">
+    <a class="button alert" href="javascript:" onclick="alert();">alert</a>
+    <a class="button alarm" href="javascript:" onclick="warning();">warning</a>
+    <a class="button success" href="javascript:" onclick="success();">success</a>
+    <a class="button error" href="javascript:" onclick="error();">error</a>
+    <a class="button msg" href="javascript:" onclick="msg();">自定义消息</a>
+</p>
+
+<script src="assets/msg.js"></script>
+<script>
+    function alert() {
+        MSG.alert('提示', '提示内容');
+    }
+
+    function warning() {
+        MSG.warning('提示', '提示内容');
+    }
+
+    function success() {
+        MSG.success('提示', '提示内容');
+    }
+
+    function error() {
+        MSG.error('提示', '提示内容');
+    }
+
+    function msg() {
+        var setting = {
+            title: '登鹳雀楼',
+            content: '白日依山尽，黄河入海流。<br>欲穷千里目，更上一层楼。',
+            icon: 'ion-android-happy',
+            iconSmall: 'ion-checkmark-circled bounce animated',
+            sound: true,
+            sound_file: 'voice_on',
+            color: '#d22121',
+            timeout: '4000'
+        };
+        MSG.msg(setting, function () {
+            MSG.alert('回调', '回调内容');
+        });
+    }
+
+</script>
+</body>
+</html>
