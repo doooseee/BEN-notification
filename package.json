@@ -1,8 +1,8 @@
 {
   "name": "ben-notification",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MSG.alert('Alert'，'success',?callback) | MSG.success | MSG.warning | MSG.error | MSG.msg",
-  "main": "index.js",
+  "main": "assets/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
